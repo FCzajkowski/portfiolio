@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Franciszek Czajkowski - Projects</title>
+    <meta name="author" content="Franciszek Czajkowski">
+    <meta name="description" content="Portfolio of Franciszek Czajkowski, a 16-year-old fullstack developer from Warsaw, Poland. Skilled in Python, Rust, web development, and creative digital design.">
+    <meta name="keywords" content="Franciszek Czajkowski, fullstack developer, portfolio, Python, Rust, Warsaw, programmer, web development, software engineer">
+
+    <meta http-equiv="refresh" content="3200">
+
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="cursor.css">
+</head>
+<body>
+    <header>
+        <p class="fancy">Czajkowski</p>
+        <div class="buttons">
+            <button onclick="scrollToContact()" tabindex="0">Contact</button>
+            <button onclick="goToHome()" tabindex="0">Home</button>
+            <button onclick="goToRandomCat()" tabindex="0">Random Cat</button>
+        </div>
+    </header>
+    <main id="main_body">
+        <article class="sekcja">
+            <section class="section_header">
+                <h1 class="fancy">My Projects</h1>
+            </section>
+            <div class="left_to_right_grid">
+                <div class="project">
+                    <img src="images/hajime.jpg" alt="Hajime Framework" style="max-width:100%; max-height:200px;">
+                    <button onclick="location.href='https://github.com/FCzajkowski/Hajime-Framework'" tabindex="0">GitHub</button>
+                </div>
+                <div class="project">
+                    <img src="images/neonide.jpg" alt="NeonIDE" style="max-width:100%; max-height:200px;">
+                    <button onclick="location.href='https://github.com/FCzajkowski'" tabindex="0">GitHub</button>
+                </div>
+            </div>
+        </article>
+    </main>
+    <footer>
+        <p class="fancy">2025 &copy; Franciszek Czajkowski</p>
+    </footer>
+    <div class="cursor-outline" data-cursor-outline></div>
+    <div class="cursor-dot" data-cursor-dot></div>
+
+
+    <script src="script.js"></script>
+    <script src="cursor.js"></script>
+</body>
+</html>

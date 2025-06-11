@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Franciszek Czajkowski</title>
+    <meta name="author" content="Franciszek Czajkowski">
+    <meta name="description" content="Portfolio of Franciszek Czajkowski, a 16-year-old fullstack developer from Warsaw, Poland. Skilled in Python, Rust, web development, and creative digital design.">
+    <meta name="keywords" content="Franciszek Czajkowski, fullstack developer, portfolio, Python, Rust, Warsaw, programmer, web development, software engineer">
+
+    <meta http-equiv="refresh" content="3200">
+
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="cursor.css">
+</head>
+<body>
+    <header>
+        <p class="fancy">Czajkowski</p>
+        <div class="buttons">
+            <button onclick="scrollToContact()" tabindex="0">Contact</button>
+            <button onclick="goToProjects()" tabindex="0">Projects</button>
+            <button onclick="goToRandomCat()" tabindex="0">Random Cat</button>
+        </div>
+    </header>
+    <main id="main_body">
+        <article class="napis">
+            <h1 class="fancy">
+                16-year-old <br> Fullstack Developer <br> from Warsaw — Poland <br>
+                mastering Python & Rust
+            </h1>
+        </article>
+        <article class="sekcja" tabindex="0">
+            <section class="section_header">
+                <h1 class="fancy">About Me</h1>
+            </section>
+            <div class="left_to_right_grid">
+                <div>
+                    <p class="section_p">I'm a 16-year-old fullstack developer & designer who enjoys building <br>clean, creative digital experiences. <br>Outside of coding, I find inspiration in <br>basketball, music, and visual art.</p>
+                </div>
+                <span class="waving_hand">👋</span>
+            </div>
+        </article>
+        <article class="sekcja" tabindex="0">
+            <section class="section_header">
+                <h1 class="fancy">Projects</h1>
+            </section>
+            <div class="left_to_right_grid">
+                <div class="project">
+                    <img src="images/hajime.jpg" alt="Hajime App">
+                    <button onclick="location.href='https://github.com/FCzajkowski/Hajime-Framework'" tabindex="0">GitHub</button>
+                </div>
+                <div class="project">
+                    <img src="images/neonide.jpg" alt="NeonIDE App">
+                    <button onclick="location.href='https://github.com/FCzajkowski'" tabindex="0">GitHub</button>
+                </div>
+            </div>
+        </article>
+        <article class="sekcja" id="contact" tabindex="0">
+            <section class="section_header">
+                <h1 class="fancy">Contact</h1>
+            </section>
+            <section class="contact_form">
+                <form>
+                    <label for="name" tabindex="0">Name</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email" tabindex="0">Email</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message" tabindex="0">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+
+                    <button type="submit" tabindex="0">Send</button>
+                </form>
+            </section>
+        </article>
+    </main>
+
+    <footer>
+        <p class="fancy">2025 &copy; Franciszek Czajkowski</p>
+    </footer>
+    <div class="cursor-outline" data-cursor-outline></div>
+    <div class="cursor-dot" data-cursor-dot></div>
+
+
+    <script src="script.js"></script>
+    <script src="cursor.js"></script>
+</body>
+</html>
