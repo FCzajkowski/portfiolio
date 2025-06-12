@@ -193,12 +193,14 @@ header{
             align-self: center; // center the button under image
             border: 1px solid $black;
             border-radius: 5px;
-            padding: 0 30px;
+            height:60px;
+            width:100px;
             transition: 250ms;
             background-color: $white;
 
             &:hover {
-            transform: rotate(3deg);
+                background-color: lighten($color: $black, $amount: 80);
+                transform: rotate(3deg);
             }
         }
     }
@@ -209,6 +211,38 @@ footer{
     text-transform: uppercase;
     font-size:20px;
 }
+
+.social-island {
+    position: fixed;
+    top: 50%;
+    left: 30px;
+    transform: translateY(-50%);
+    background-color: $white;
+    border: 1px solid $black;
+    border-radius: 20px;
+    padding: 25px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    z-index: 999; // Ensures it stays above most elements, but below cursor
+
+    i {
+        font-family: "Old Standard TT", serif;
+        font-size: 40px;
+        width:40px;
+        height:40px;
+        color: $black;
+        text-decoration: none;
+        border-bottom: 1px solid transparent;
+        transition: 250ms;
+
+        &:hover {
+            border-bottom: 1px solid $black;
+            transform: rotate(-1deg);
+        }
+    }
+}
+
 
 @keyframes fadeInUp {
   from {
